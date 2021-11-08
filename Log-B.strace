@@ -1,0 +1,984 @@
+16931 stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+16931 stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+16931 stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16931 open("/home/user/test/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+16931 fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16931 brk(0x8a4000)                     = 0x8a4000
+16931 getdents(3</home/user/test>, /* 14 entries */, 32768) = 472
+16931 stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+16931 stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+16931 stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16931 stat("/home/user/test/count_keystrokes", {st_mode=S_IFREG|0755, st_size=8744, ...}) = 0
+16931 stat("./count_keystrokes", {st_mode=S_IFREG|0755, st_size=8744, ...}) = 0
+16931 stat("./count_keystrokes", {st_mode=S_IFREG|0755, st_size=8744, ...}) = 0
+16931 geteuid()                         = 1000
+16931 getegid()                         = 1000
+16931 getuid()                          = 1000
+16931 getgid()                          = 1000
+16931 access("./count_keystrokes", X_OK) = 0
+16931 stat("./count_keystrokes", {st_mode=S_IFREG|0755, st_size=8744, ...}) = 0
+16931 geteuid()                         = 1000
+16931 getegid()                         = 1000
+16931 getuid()                          = 1000
+16931 getgid()                          = 1000
+16931 access("./count_keystrokes", R_OK) = 0
+16931 stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+16931 stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+16931 stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16931 stat("/home/user/test/count_keystrokes.c", {st_mode=S_IFREG|0775, st_size=280, ...}) = 0
+16931 stat("./count_keystrokes.c", {st_mode=S_IFREG|0775, st_size=280, ...}) = 0
+16931 stat("./count_keystrokes.c", {st_mode=S_IFREG|0775, st_size=280, ...}) = 0
+16931 geteuid()                         = 1000
+16931 getegid()                         = 1000
+16931 getuid()                          = 1000
+16931 getgid()                          = 1000
+16931 access("./count_keystrokes.c", X_OK) = 0
+16931 stat("./count_keystrokes.c", {st_mode=S_IFREG|0775, st_size=280, ...}) = 0
+16931 geteuid()                         = 1000
+16931 getegid()                         = 1000
+16931 getuid()                          = 1000
+16931 getgid()                          = 1000
+16931 access("./count_keystrokes.c", R_OK) = 0
+16931 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+16931 brk(0x894000)                     = 0x894000
+16931 close(3</home/user/test>)         = 0
+16931 write(2</dev/tty1>, "\7", 1)      = 1
+16931 write(2</dev/tty1>, "nt_keystrokes", 13) = 13
+16931 read(0</dev/tty1>, "\r", 1)       = 1
+16931 write(2</dev/tty1>, "\n", 1)      = 1
+16931 ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+16931 ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+16931 ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16931 rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7ffff76154b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+16931 pipe([3<pipe:[96374]>, 4<pipe:[96374]>]) = 0
+16931 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [CHLD], 8) = 0
+16931 pipe([5<pipe:[96376]>, 6<pipe:[96376]>]) = 0
+16931 clone( <unfinished ...>
+16955 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+16931 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7feb9d0) = 16955
+16955 <... rt_sigprocmask resumed> NULL, 8) = 0
+16931 setpgid(16955, 16955 <unfinished ...>
+16955 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16931 <... setpgid resumed> )           = 0
+16955 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+16955 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16931 <... rt_sigprocmask resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 close(4<pipe:[96374]> <unfinished ...>
+16955 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16931 <... close resumed> )             = 0
+16955 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 close(4 <unfinished ...>
+16955 setpgid(16955, 16955 <unfinished ...>
+16931 <... close resumed> )             = -1 EBADF (Bad file descriptor)
+16955 <... setpgid resumed> )           = 0
+16931 rt_sigprocmask(SIG_BLOCK, [INT CHLD],  <unfinished ...>
+16955 rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU],  <unfinished ...>
+16931 <... rt_sigprocmask resumed> [CHLD], 8) = 0
+16955 <... rt_sigprocmask resumed> [], 8) = 0
+16931 clone( <unfinished ...>
+16955 ioctl(255</dev/tty1>, TIOCSPGRP, [16955] <unfinished ...>
+16956 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+16955 <... ioctl resumed> )             = 0
+16931 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7feb9d0) = 16956
+16956 <... rt_sigprocmask resumed> NULL, 8) = 0
+16955 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+16931 setpgid(16956, 16955 <unfinished ...>
+16956 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 <... rt_sigprocmask resumed> NULL, 8) = 0
+16931 <... setpgid resumed> )           = 0
+16956 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 close(6<pipe:[96376]> <unfinished ...>
+16931 rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+16956 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 <... close resumed> )             = 0
+16931 <... rt_sigprocmask resumed> NULL, 8) = 0
+16956 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 read(5<pipe:[96376]>,  <unfinished ...>
+16931 close(3<pipe:[96374]> <unfinished ...>
+16956 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16931 <... close resumed> )             = 0
+16956 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+16956 setpgid(16956, 16955 <unfinished ...>
+16931 <... rt_sigprocmask resumed> [CHLD], 8) = 0
+16956 <... setpgid resumed> )           = 0
+16931 close(5<pipe:[96376]> <unfinished ...>
+16956 rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU],  <unfinished ...>
+16931 <... close resumed> )             = 0
+16956 <... rt_sigprocmask resumed> [], 8) = 0
+16931 close(6<pipe:[96376]> <unfinished ...>
+16956 ioctl(255</dev/tty1>, TIOCSPGRP, [16955] <unfinished ...>
+16931 <... close resumed> )             = 0
+16956 <... ioctl resumed> )             = 0
+16931 ioctl(255</dev/tty1>, TIOCGPGRP <unfinished ...>
+16956 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+16931 <... ioctl resumed> , [16955])    = 0
+16956 <... rt_sigprocmask resumed> NULL, 8) = 0
+16931 rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+16956 close(5<pipe:[96376]> <unfinished ...>
+16931 <... rt_sigprocmask resumed> NULL, 8) = 0
+16956 <... close resumed> )             = 0
+16931 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+16956 close(6<pipe:[96376]> <unfinished ...>
+16931 <... rt_sigprocmask resumed> [CHLD], 8) = 0
+16956 <... close resumed> )             = 0
+16955 <... read resumed> "", 1)         = 0
+16931 wait4(-1,  <unfinished ...>
+16956 dup2(3<pipe:[96374]>, 0</dev/tty1> <unfinished ...>
+16955 close(5<pipe:[96376]> <unfinished ...>
+16956 <... dup2 resumed> )              = 0<pipe:[96374]>
+16955 <... close resumed> )             = 0
+16956 close(3<pipe:[96374]> <unfinished ...>
+16955 rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... close resumed> )             = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> NULL, 8) = 0
+16956 rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> NULL, 8) = 0
+16955 <... rt_sigaction resumed> {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16956 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16956 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 <... rt_sigaction resumed> {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16956 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16955 <... rt_sigaction resumed> {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16956 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0},  <unfinished ...>
+16955 rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0},  <unfinished ...>
+16956 <... rt_sigaction resumed> {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16955 <... rt_sigaction resumed> {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16956 execve("./count_keystrokes", ["./count_keystrokes"], [/* 22 vars */] <unfinished ...>
+16955 rt_sigaction(SIGINT, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16956 <... execve resumed> )            = 0
+16955 pipe( <unfinished ...>
+16956 brk(NULL <unfinished ...>
+16955 <... pipe resumed> [5<pipe:[96393]>, 6<pipe:[96393]>]) = 0
+16956 <... brk resumed> )               = 0x602000
+16955 close(5<pipe:[96393]> <unfinished ...>
+16956 access("/etc/ld.so.nohwcap", F_OK <unfinished ...>
+16955 <... close resumed> )             = 0
+16956 <... access resumed> )            = -1 ENOENT (No such file or directory)
+16955 close(6<pipe:[96393]> <unfinished ...>
+16956 access("/etc/ld.so.preload", R_OK <unfinished ...>
+16955 <... close resumed> )             = 0
+16956 <... access resumed> )            = -1 ENOENT (No such file or directory)
+16955 rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+16956 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+16955 <... rt_sigprocmask resumed> [], 8) = 0
+16956 <... open resumed> )              = 3</etc/ld.so.cache>
+16955 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+16956 fstat(3</etc/ld.so.cache>,  <unfinished ...>
+16955 <... rt_sigprocmask resumed> NULL, 8) = 0
+16956 <... fstat resumed> {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16955 close(3<pipe:[96374]> <unfinished ...>
+16956 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0 <unfinished ...>
+16955 <... close resumed> )             = 0
+16956 <... mmap resumed> )              = 0x7ffff7fee000
+16955 dup2(4<pipe:[96374]>, 1</dev/tty1> <unfinished ...>
+16956 close(3</etc/ld.so.cache> <unfinished ...>
+16955 <... dup2 resumed> )              = 1<pipe:[96374]>
+16956 <... close resumed> )             = 0
+16955 close(4<pipe:[96374]> <unfinished ...>
+16956 access("/etc/ld.so.nohwcap", F_OK <unfinished ...>
+16955 <... close resumed> )             = 0
+16956 <... access resumed> )            = -1 ENOENT (No such file or directory)
+16955 stat(".",  <unfinished ...>
+16956 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+16955 <... stat resumed> {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16956 <... open resumed> )              = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16955 stat("/home/user/bin/cat",  <unfinished ...>
+16956 read(3</lib/x86_64-linux-gnu/libc-2.23.so>,  <unfinished ...>
+16955 <... stat resumed> 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16956 <... read resumed> "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16955 stat("/home/user/.local/bin/cat",  <unfinished ...>
+16956 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>,  <unfinished ...>
+16955 <... stat resumed> 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16956 <... fstat resumed> {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16955 stat("/usr/local/sbin/cat",  <unfinished ...>
+16956 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+16955 <... stat resumed> 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16956 <... mmap resumed> )              = 0x7ffff7fed000
+16955 stat("/usr/local/bin/cat",  <unfinished ...>
+16956 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0 <unfinished ...>
+16955 <... stat resumed> 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16956 <... mmap resumed> )              = 0x7ffff7a0d000
+16955 stat("/usr/sbin/cat",  <unfinished ...>
+16956 mprotect(0x7ffff7bcd000, 2097152, PROT_NONE <unfinished ...>
+16955 <... stat resumed> 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16956 <... mprotect resumed> )          = 0
+16955 stat("/usr/bin/cat",  <unfinished ...>
+16956 mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000 <unfinished ...>
+16955 <... stat resumed> 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16956 <... mmap resumed> )              = 0x7ffff7dcd000
+16956 mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+16956 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16956 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16956 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16956 arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+16956 mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+16956 mprotect(0x600000, 4096, PROT_READ) = 0
+16956 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16956 munmap(0x7ffff7fee000, 35038)     = 0
+16956 fstat(1</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+16956 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16956 brk(NULL)                         = 0x602000
+16956 brk(0x624000)                     = 0x624000
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16955 stat("/sbin/cat", 0x7fffffffe220) = -1 ENOENT (No such file or directory)
+16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+16955 geteuid()                         = 1000
+16955 getegid()                         = 1000
+16955 getuid()                          = 1000
+16955 getgid()                          = 1000
+16955 access("/bin/cat", X_OK)          = 0
+16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+16955 geteuid()                         = 1000
+16955 getegid()                         = 1000
+16955 getuid()                          = 1000
+16955 getgid()                          = 1000
+16955 access("/bin/cat", R_OK)          = 0
+16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+16955 geteuid()                         = 1000
+16955 getegid()                         = 1000
+16955 getuid()                          = 1000
+16955 getgid()                          = 1000
+16955 access("/bin/cat", X_OK)          = 0
+16955 stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+16955 geteuid()                         = 1000
+16955 getegid()                         = 1000
+16955 getuid()                          = 1000
+16955 getgid()                          = 1000
+16955 access("/bin/cat", R_OK)          = 0
+16955 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+16955 clone( <unfinished ...>
+16957 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16957 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16957 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16957 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16957 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16957 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16957 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16957 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16957 execve("/bin/cat", ["cat", "in.txt"], [/* 22 vars */]) = 0
+16957 brk(NULL)                         = 0x60d000
+16957 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16957 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16957 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16957 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16957 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16957 close(3</etc/ld.so.cache>)        = 0
+16957 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16957 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16957 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16957 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16957 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16957 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+16957 mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+16957 mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+16957 mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+16957 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16957 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16957 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16957 arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+16957 mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+16957 mprotect(0x60b000, 4096, PROT_READ) = 0
+16957 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16957 munmap(0x7ffff7fee000, 35038)     = 0
+16957 brk(NULL)                         = 0x60d000
+16957 brk(0x62e000)                     = 0x62e000
+16957 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+16957 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+16957 mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+16957 close(3</usr/lib/locale/locale-archive>) = 0
+16957 fstat(1<pipe:[96374]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+16957 open("in.txt", O_RDONLY)          = 3</home/user/test/in.txt>
+16957 fstat(3</home/user/test/in.txt>, {st_mode=S_IFREG|0664, st_size=112, ...}) = 0
+16957 fadvise64(3</home/user/test/in.txt>, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+16957 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fc9000
+16957 read(3</home/user/test/in.txt>, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"..., 131072) = 112
+16957 write(1<pipe:[96374]>, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"..., 112) = 112
+16957 read(3</home/user/test/in.txt>, "", 131072) = 0
+16957 munmap(0x7ffff7fc9000, 139264)    = 0
+16957 close(3</home/user/test/in.txt>)  = 0
+16957 close(1<pipe:[96374]>)            = 0
+16957 close(2</dev/tty1>)               = 0
+16957 exit_group(0)                     = ?
+16957 +++ exited with 0 +++
+16956 <... read resumed> "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"..., 400) = 112
+16956 write(1</dev/tty1>, "Try to exec /bin/sh\n", 20) = 20
+16956 write(1</dev/tty1>, "Read 112 bytes. buf is AAAAAAAAA"..., 117) = 117
+16956 write(1</dev/tty1>, "No shell for you:(\n", 19) = 19
+16956 execve("/bin/sh", ["/bin/sh"], NULL) = 0
+16956 brk(NULL)                         = 0x55555577c000
+16956 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16956 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16956 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16956 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16956 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16956 close(3</etc/ld.so.cache>)        = 0
+16956 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16956 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16956 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16956 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16956 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16956 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+16956 mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+16956 mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+16956 mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+16956 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16956 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16956 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16956 arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+16956 mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+16956 mprotect(0x555555777000, 8192, PROT_READ) = 0
+16956 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16956 munmap(0x7ffff7fee000, 35038)     = 0
+16956 getuid()                          = 1000
+16956 getgid()                          = 1000
+16956 getpid()                          = 16956
+16956 rt_sigaction(SIGCHLD, {0x55555556b540, ~[RTMIN RT_1], SA_RESTORER, 0x7ffff7a424b0}, NULL, 8) = 0
+16956 geteuid()                         = 1000
+16956 brk(NULL)                         = 0x55555577c000
+16956 brk(0x55555579d000)               = 0x55555579d000
+16956 getppid()                         = 16931
+16956 getcwd("/home/user/test", 4096)   = 16
+16956 ioctl(0<pipe:[96374]>, TCGETS, 0x7fffffffebc0) = -1 ENOTTY (Inappropriate ioctl for device)
+16956 geteuid()                         = 1000
+16956 getegid()                         = 1000
+16956 rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+16956 rt_sigaction(SIGINT, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7ffff7a424b0}, NULL, 8) = 0
+16956 rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+16956 rt_sigaction(SIGQUIT, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7ffff7a424b0}, NULL, 8) = 0
+16956 rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+16956 rt_sigaction(SIGTERM, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7ffff7a424b0}, NULL, 8) = 0
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16955 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7feb9d0) = 16957
+16955 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16955 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16957, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16955 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 16957
+16955 wait4(-1, 0x7fffffffdbd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+16955 rt_sigreturn({mask=[]})           = 0
+16955 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+16955 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16955 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+16955 rt_sigaction(SIGINT, {0x4449b0, [], SA_RESTORER, 0x7ffff76154b0}, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 rt_sigaction(SIGINT, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, {0x4449b0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16955 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+16955 clone( <unfinished ...>
+16958 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16958 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16958 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16958 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16958 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16958 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16958 rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_DFL, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16958 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16958 execve("/bin/cat", ["cat"], [/* 22 vars */]) = 0
+16958 brk(NULL)                         = 0x60d000
+16958 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16958 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16958 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16958 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16958 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16958 close(3</etc/ld.so.cache>)        = 0
+16958 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16958 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16958 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16958 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16958 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16958 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+16958 mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+16958 mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+16958 mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+16958 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16958 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16958 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16958 arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+16958 mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+16958 mprotect(0x60b000, 4096, PROT_READ) = 0
+16958 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16958 munmap(0x7ffff7fee000, 35038)     = 0
+16958 brk(NULL)                         = 0x60d000
+16958 brk(0x62e000)                     = 0x62e000
+16958 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+16958 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+16958 mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+16958 close(3</usr/lib/locale/locale-archive>) = 0
+16958 fstat(1<pipe:[96374]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+16958 fstat(0</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+16958 fadvise64(0</dev/tty1>, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+16958 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fc9000
+16958 read(0</dev/tty1>,  <unfinished ...>
+16955 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7feb9d0) = 16958
+16955 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16955 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+16955 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16955 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+16955 rt_sigaction(SIGINT, {0x4449b0, [], SA_RESTORER, 0x7ffff76154b0}, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 wait4(-1,  <unfinished ...>
+16958 <... read resumed> "ls\n", 131072) = 3
+16958 write(1<pipe:[96374]>, "ls\n", 3) = 3
+16958 read(0</dev/tty1>,  <unfinished ...>
+16956 <... read resumed> "ls\n", 8192)  = 3
+16956 stat("/usr/local/sbin/ls", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/usr/local/bin/ls", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/usr/sbin/ls", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/usr/bin/ls", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/sbin/ls", 0x7fffffffea50)  = -1 ENOENT (No such file or directory)
+16956 stat("/bin/ls", {st_mode=S_IFREG|0755, st_size=126584, ...}) = 0
+16956 clone( <unfinished ...>
+16959 execve("/bin/ls", ["ls"], [/* 1 var */]) = 0
+16959 brk(NULL)                         = 0x620000
+16959 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16959 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16959 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16959 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16959 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16959 close(3</etc/ld.so.cache>)        = 0
+16959 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16959 open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libselinux.so.1>
+16959 read(3</lib/x86_64-linux-gnu/libselinux.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260Z\0\0\0\0\0\0"..., 832) = 832
+16959 fstat(3</lib/x86_64-linux-gnu/libselinux.so.1>, {st_mode=S_IFREG|0644, st_size=130224, ...}) = 0
+16959 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16959 mmap(NULL, 2234080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libselinux.so.1>, 0) = 0x7ffff7bb5000
+16959 mprotect(0x7ffff7bd4000, 2093056, PROT_NONE) = 0
+16959 mmap(0x7ffff7dd3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libselinux.so.1>, 0x1e000) = 0x7ffff7dd3000
+16959 mmap(0x7ffff7dd5000, 5856, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd5000
+16959 close(3</lib/x86_64-linux-gnu/libselinux.so.1>) = 0
+16959 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16959 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16959 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16959 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16959 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff77eb000
+16959 mprotect(0x7ffff79ab000, 2097152, PROT_NONE) = 0
+16959 mmap(0x7ffff7bab000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7bab000
+16959 mmap(0x7ffff7bb1000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7bb1000
+16959 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16959 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16959 open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>
+16959 read(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\25\0\0\0\0\0\0"..., 832) = 832
+16959 fstat(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, {st_mode=S_IFREG|0644, st_size=456632, ...}) = 0
+16959 mmap(NULL, 2552072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, 0) = 0x7ffff757b000
+16959 mprotect(0x7ffff75e9000, 2097152, PROT_NONE) = 0
+16959 mmap(0x7ffff77e9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, 0x6e000) = 0x7ffff77e9000
+16959 close(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>) = 0
+16959 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16959 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libdl-2.23.so>
+16959 read(3</lib/x86_64-linux-gnu/libdl-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+16959 fstat(3</lib/x86_64-linux-gnu/libdl-2.23.so>, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+16959 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16959 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0) = 0x7ffff7377000
+16959 mprotect(0x7ffff737a000, 2093056, PROT_NONE) = 0
+16959 mmap(0x7ffff7579000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0x2000) = 0x7ffff7579000
+16959 close(3</lib/x86_64-linux-gnu/libdl-2.23.so>) = 0
+16959 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16959 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libpthread-2.23.so>
+16959 read(3</lib/x86_64-linux-gnu/libpthread-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+16959 fstat(3</lib/x86_64-linux-gnu/libpthread-2.23.so>, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+16959 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpthread-2.23.so>, 0) = 0x7ffff715a000
+16959 mprotect(0x7ffff7172000, 2093056, PROT_NONE) = 0
+16959 mmap(0x7ffff7371000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpthread-2.23.so>, 0x17000) = 0x7ffff7371000
+16959 mmap(0x7ffff7373000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7373000
+16959 close(3</lib/x86_64-linux-gnu/libpthread-2.23.so>) = 0
+16959 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16959 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fe9000
+16959 arch_prctl(ARCH_SET_FS, 0x7ffff7fe9800) = 0
+16959 mprotect(0x7ffff7bab000, 16384, PROT_READ) = 0
+16959 mprotect(0x7ffff7371000, 4096, PROT_READ) = 0
+16959 mprotect(0x7ffff7579000, 4096, PROT_READ) = 0
+16959 mprotect(0x7ffff77e9000, 4096, PROT_READ) = 0
+16959 mprotect(0x7ffff7dd3000, 4096, PROT_READ) = 0
+16959 mprotect(0x61d000, 4096, PROT_READ) = 0
+16959 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16959 munmap(0x7ffff7fee000, 35038)     = 0
+16959 set_tid_address(0x7ffff7fe9ad0)   = 16959
+16959 set_robust_list(0x7ffff7fe9ae0, 24) = 0
+16959 rt_sigaction(SIGRTMIN, {0x7ffff715fb50, [], SA_RESTORER|SA_SIGINFO, 0x7ffff716b390}, NULL, 8) = 0
+16959 rt_sigaction(SIGRT_1, {0x7ffff715fbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ffff716b390}, NULL, 8) = 0
+16959 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+16959 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+16959 statfs("/sys/fs/selinux", 0x7fffffffece0) = -1 ENOENT (No such file or directory)
+16959 statfs("/selinux", 0x7fffffffece0) = -1 ENOENT (No such file or directory)
+16959 brk(NULL)                         = 0x620000
+16959 brk(0x641000)                     = 0x641000
+16959 open("/proc/filesystems", O_RDONLY) = 3</proc/filesystems>
+16959 fstat(3</proc/filesystems>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+16959 read(3</proc/filesystems>, "nodev\tsysfs\nnodev\trootfs\nnodev\tr"..., 1024) = 362
+16959 read(3</proc/filesystems>, "", 1024) = 0
+16959 close(3</proc/filesystems>)       = 0
+16959 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16959 ioctl(1</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+16959 open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+16959 fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16959 getdents(3</home/user/test>, /* 14 entries */, 32768) = 472
+16959 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+16959 close(3</home/user/test>)         = 0
+16959 fstat(1</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+16959 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16959 write(1</dev/tty1>, "a_user_file\t   count_keystrokes."..., 62) = 62
+16959 write(1</dev/tty1>, "another_user_file  exploit.py\t  "..., 57) = 57
+16959 write(1</dev/tty1>, "count_keystrokes   getenvaddr\t  "..., 62) = 62
+16959 close(1</dev/tty1>)               = 0
+16959 close(2</dev/tty1>)               = 0
+16959 exit_group(0)                     = ?
+16959 +++ exited with 0 +++
+16956 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7fec9d0) = 16959
+16956 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16959, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16956 rt_sigreturn({mask=[]})           = 16959
+16956 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16959
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16958 <... read resumed> "rm a_user_file\n", 131072) = 15
+16958 write(1<pipe:[96374]>, "rm a_user_file\n", 15) = 15
+16956 <... read resumed> "rm a_user_file\n", 8192) = 15
+16958 read(0</dev/tty1>,  <unfinished ...>
+16956 stat("/usr/local/sbin/rm", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/usr/local/bin/rm", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/usr/sbin/rm", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/usr/bin/rm", 0x7fffffffea50) = -1 ENOENT (No such file or directory)
+16956 stat("/sbin/rm", 0x7fffffffea50)  = -1 ENOENT (No such file or directory)
+16956 stat("/bin/rm", {st_mode=S_IFREG|0755, st_size=60272, ...}) = 0
+16956 clone( <unfinished ...>
+16960 execve("/bin/rm", ["rm", "a_user_file"], [/* 1 var */] <unfinished ...>
+16956 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7fec9d0) = 16960
+16956 wait4(-1,  <unfinished ...>
+16960 <... execve resumed> )            = 0
+16960 brk(NULL)                         = 0x60f000
+16960 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16960 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16960 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16960 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16960 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16960 close(3</etc/ld.so.cache>)        = 0
+16960 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16960 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16960 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16960 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16960 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16960 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+16960 mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+16960 mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+16960 mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+16960 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16960 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16960 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16960 arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+16960 mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+16960 mprotect(0x60d000, 4096, PROT_READ) = 0
+16960 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16960 munmap(0x7ffff7fee000, 35038)     = 0
+16960 brk(NULL)                         = 0x60f000
+16960 brk(0x630000)                     = 0x630000
+16960 ioctl(0<pipe:[96374]>, TCGETS, 0x7fffffffebf0) = -1 ENOTTY (Inappropriate ioctl for device)
+16960 newfstatat(AT_FDCWD, "a_user_file", {st_mode=S_IFREG|0664, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+16960 unlinkat(AT_FDCWD, "a_user_file", 0) = 0
+16960 lseek(0<pipe:[96374]>, 0, SEEK_CUR) = -1 ESPIPE (Illegal seek)
+16960 close(0<pipe:[96374]>)            = 0
+16960 close(1</dev/tty1>)               = 0
+16960 close(2</dev/tty1>)               = 0
+16960 exit_group(0)                     = ?
+16960 +++ exited with 0 +++
+16956 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16960
+16956 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16960, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16956 rt_sigreturn({mask=[]})           = 16960
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16958 <... read resumed> "ls\n", 131072) = 3
+16958 write(1<pipe:[96374]>, "ls\n", 3) = 3
+16956 <... read resumed> "ls\n", 8192)  = 3
+16958 read(0</dev/tty1>,  <unfinished ...>
+16956 clone( <unfinished ...>
+16961 execve("/bin/ls", ["ls"], [/* 1 var */] <unfinished ...>
+16956 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7fec9d0) = 16961
+16956 wait4(-1,  <unfinished ...>
+16961 <... execve resumed> )            = 0
+16961 brk(NULL)                         = 0x620000
+16961 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16961 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16961 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16961 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16961 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16961 close(3</etc/ld.so.cache>)        = 0
+16961 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16961 open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libselinux.so.1>
+16961 read(3</lib/x86_64-linux-gnu/libselinux.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260Z\0\0\0\0\0\0"..., 832) = 832
+16961 fstat(3</lib/x86_64-linux-gnu/libselinux.so.1>, {st_mode=S_IFREG|0644, st_size=130224, ...}) = 0
+16961 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16961 mmap(NULL, 2234080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libselinux.so.1>, 0) = 0x7ffff7bb5000
+16961 mprotect(0x7ffff7bd4000, 2093056, PROT_NONE) = 0
+16961 mmap(0x7ffff7dd3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libselinux.so.1>, 0x1e000) = 0x7ffff7dd3000
+16961 mmap(0x7ffff7dd5000, 5856, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd5000
+16961 close(3</lib/x86_64-linux-gnu/libselinux.so.1>) = 0
+16961 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16961 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16961 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16961 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16961 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff77eb000
+16961 mprotect(0x7ffff79ab000, 2097152, PROT_NONE) = 0
+16961 mmap(0x7ffff7bab000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7bab000
+16961 mmap(0x7ffff7bb1000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7bb1000
+16961 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16961 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16961 open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>
+16961 read(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\25\0\0\0\0\0\0"..., 832) = 832
+16961 fstat(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, {st_mode=S_IFREG|0644, st_size=456632, ...}) = 0
+16961 mmap(NULL, 2552072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, 0) = 0x7ffff757b000
+16961 mprotect(0x7ffff75e9000, 2097152, PROT_NONE) = 0
+16961 mmap(0x7ffff77e9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, 0x6e000) = 0x7ffff77e9000
+16961 close(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>) = 0
+16961 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16961 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libdl-2.23.so>
+16961 read(3</lib/x86_64-linux-gnu/libdl-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+16961 fstat(3</lib/x86_64-linux-gnu/libdl-2.23.so>, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+16961 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16961 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0) = 0x7ffff7377000
+16961 mprotect(0x7ffff737a000, 2093056, PROT_NONE) = 0
+16961 mmap(0x7ffff7579000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0x2000) = 0x7ffff7579000
+16961 close(3</lib/x86_64-linux-gnu/libdl-2.23.so>) = 0
+16961 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16961 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libpthread-2.23.so>
+16961 read(3</lib/x86_64-linux-gnu/libpthread-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+16961 fstat(3</lib/x86_64-linux-gnu/libpthread-2.23.so>, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+16961 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpthread-2.23.so>, 0) = 0x7ffff715a000
+16961 mprotect(0x7ffff7172000, 2093056, PROT_NONE) = 0
+16961 mmap(0x7ffff7371000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpthread-2.23.so>, 0x17000) = 0x7ffff7371000
+16961 mmap(0x7ffff7373000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7373000
+16961 close(3</lib/x86_64-linux-gnu/libpthread-2.23.so>) = 0
+16961 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16961 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fe9000
+16961 arch_prctl(ARCH_SET_FS, 0x7ffff7fe9800) = 0
+16961 mprotect(0x7ffff7bab000, 16384, PROT_READ) = 0
+16961 mprotect(0x7ffff7371000, 4096, PROT_READ) = 0
+16961 mprotect(0x7ffff7579000, 4096, PROT_READ) = 0
+16961 mprotect(0x7ffff77e9000, 4096, PROT_READ) = 0
+16961 mprotect(0x7ffff7dd3000, 4096, PROT_READ) = 0
+16961 mprotect(0x61d000, 4096, PROT_READ) = 0
+16961 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16961 munmap(0x7ffff7fee000, 35038)     = 0
+16961 set_tid_address(0x7ffff7fe9ad0)   = 16961
+16961 set_robust_list(0x7ffff7fe9ae0, 24) = 0
+16961 rt_sigaction(SIGRTMIN, {0x7ffff715fb50, [], SA_RESTORER|SA_SIGINFO, 0x7ffff716b390}, NULL, 8) = 0
+16961 rt_sigaction(SIGRT_1, {0x7ffff715fbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ffff716b390}, NULL, 8) = 0
+16961 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+16961 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+16961 statfs("/sys/fs/selinux", 0x7fffffffece0) = -1 ENOENT (No such file or directory)
+16961 statfs("/selinux", 0x7fffffffece0) = -1 ENOENT (No such file or directory)
+16961 brk(NULL)                         = 0x620000
+16961 brk(0x641000)                     = 0x641000
+16961 open("/proc/filesystems", O_RDONLY) = 3</proc/filesystems>
+16961 fstat(3</proc/filesystems>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+16961 read(3</proc/filesystems>, "nodev\tsysfs\nnodev\trootfs\nnodev\tr"..., 1024) = 362
+16961 read(3</proc/filesystems>, "", 1024) = 0
+16961 close(3</proc/filesystems>)       = 0
+16961 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16961 ioctl(1</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+16961 open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+16961 fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16961 getdents(3</home/user/test>, /* 13 entries */, 32768) = 440
+16961 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+16961 close(3</home/user/test>)         = 0
+16961 fstat(1</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+16961 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16961 write(1</dev/tty1>, "another_user_file  count_keystro"..., 80) = 80
+16961 write(1</dev/tty1>, "count_keystrokes   exploit.py\t  "..., 87) = 87
+16961 close(1</dev/tty1>)               = 0
+16961 close(2</dev/tty1>)               = 0
+16961 exit_group(0)                     = ?
+16961 +++ exited with 0 +++
+16956 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16961
+16956 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16961, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16956 rt_sigreturn({mask=[]})           = 16961
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16958 <... read resumed> "rm another_user_file\n", 131072) = 21
+16958 write(1<pipe:[96374]>, "rm another_user_file\n", 21) = 21
+16956 <... read resumed> "rm another_user_file\n", 8192) = 21
+16958 read(0</dev/tty1>,  <unfinished ...>
+16956 clone( <unfinished ...>
+16962 execve("/bin/rm", ["rm", "another_user_file"], [/* 1 var */] <unfinished ...>
+16956 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7fec9d0) = 16962
+16956 wait4(-1,  <unfinished ...>
+16962 <... execve resumed> )            = 0
+16962 brk(NULL)                         = 0x60f000
+16962 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16962 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16962 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16962 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16962 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16962 close(3</etc/ld.so.cache>)        = 0
+16962 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16962 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16962 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16962 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16962 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16962 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+16962 mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+16962 mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+16962 mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+16962 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16962 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16962 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16962 arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+16962 mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+16962 mprotect(0x60d000, 4096, PROT_READ) = 0
+16962 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16962 munmap(0x7ffff7fee000, 35038)     = 0
+16962 brk(NULL)                         = 0x60f000
+16962 brk(0x630000)                     = 0x630000
+16962 ioctl(0<pipe:[96374]>, TCGETS, 0x7fffffffebf0) = -1 ENOTTY (Inappropriate ioctl for device)
+16962 newfstatat(AT_FDCWD, "another_user_file", {st_mode=S_IFREG|0664, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+16962 unlinkat(AT_FDCWD, "another_user_file", 0) = 0
+16962 lseek(0<pipe:[96374]>, 0, SEEK_CUR) = -1 ESPIPE (Illegal seek)
+16962 close(0<pipe:[96374]>)            = 0
+16962 close(1</dev/tty1>)               = 0
+16962 close(2</dev/tty1>)               = 0
+16962 exit_group(0)                     = ?
+16962 +++ exited with 0 +++
+16956 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16962
+16956 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16962, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16956 rt_sigreturn({mask=[]})           = 16962
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16958 <... read resumed> "ls\n", 131072) = 3
+16958 write(1<pipe:[96374]>, "ls\n", 3) = 3
+16956 <... read resumed> "ls\n", 8192)  = 3
+16958 read(0</dev/tty1>,  <unfinished ...>
+16956 clone( <unfinished ...>
+16963 execve("/bin/ls", ["ls"], [/* 1 var */] <unfinished ...>
+16956 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ffff7fec9d0) = 16963
+16956 wait4(-1,  <unfinished ...>
+16963 <... execve resumed> )            = 0
+16963 brk(NULL)                         = 0x620000
+16963 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16963 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+16963 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+16963 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+16963 mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+16963 close(3</etc/ld.so.cache>)        = 0
+16963 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16963 open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libselinux.so.1>
+16963 read(3</lib/x86_64-linux-gnu/libselinux.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260Z\0\0\0\0\0\0"..., 832) = 832
+16963 fstat(3</lib/x86_64-linux-gnu/libselinux.so.1>, {st_mode=S_IFREG|0644, st_size=130224, ...}) = 0
+16963 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+16963 mmap(NULL, 2234080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libselinux.so.1>, 0) = 0x7ffff7bb5000
+16963 mprotect(0x7ffff7bd4000, 2093056, PROT_NONE) = 0
+16963 mmap(0x7ffff7dd3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libselinux.so.1>, 0x1e000) = 0x7ffff7dd3000
+16963 mmap(0x7ffff7dd5000, 5856, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd5000
+16963 close(3</lib/x86_64-linux-gnu/libselinux.so.1>) = 0
+16963 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16963 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+16963 read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+16963 fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+16963 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff77eb000
+16963 mprotect(0x7ffff79ab000, 2097152, PROT_NONE) = 0
+16963 mmap(0x7ffff7bab000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7bab000
+16963 mmap(0x7ffff7bb1000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7bb1000
+16963 close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+16963 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16963 open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>
+16963 read(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\25\0\0\0\0\0\0"..., 832) = 832
+16963 fstat(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, {st_mode=S_IFREG|0644, st_size=456632, ...}) = 0
+16963 mmap(NULL, 2552072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, 0) = 0x7ffff757b000
+16963 mprotect(0x7ffff75e9000, 2097152, PROT_NONE) = 0
+16963 mmap(0x7ffff77e9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>, 0x6e000) = 0x7ffff77e9000
+16963 close(3</lib/x86_64-linux-gnu/libpcre.so.3.13.2>) = 0
+16963 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16963 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libdl-2.23.so>
+16963 read(3</lib/x86_64-linux-gnu/libdl-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+16963 fstat(3</lib/x86_64-linux-gnu/libdl-2.23.so>, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+16963 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+16963 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0) = 0x7ffff7377000
+16963 mprotect(0x7ffff737a000, 2093056, PROT_NONE) = 0
+16963 mmap(0x7ffff7579000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0x2000) = 0x7ffff7579000
+16963 close(3</lib/x86_64-linux-gnu/libdl-2.23.so>) = 0
+16963 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+16963 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libpthread-2.23.so>
+16963 read(3</lib/x86_64-linux-gnu/libpthread-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+16963 fstat(3</lib/x86_64-linux-gnu/libpthread-2.23.so>, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+16963 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpthread-2.23.so>, 0) = 0x7ffff715a000
+16963 mprotect(0x7ffff7172000, 2093056, PROT_NONE) = 0
+16963 mmap(0x7ffff7371000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libpthread-2.23.so>, 0x17000) = 0x7ffff7371000
+16963 mmap(0x7ffff7373000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7373000
+16963 close(3</lib/x86_64-linux-gnu/libpthread-2.23.so>) = 0
+16963 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+16963 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fe9000
+16963 arch_prctl(ARCH_SET_FS, 0x7ffff7fe9800) = 0
+16963 mprotect(0x7ffff7bab000, 16384, PROT_READ) = 0
+16963 mprotect(0x7ffff7371000, 4096, PROT_READ) = 0
+16963 mprotect(0x7ffff7579000, 4096, PROT_READ) = 0
+16963 mprotect(0x7ffff77e9000, 4096, PROT_READ) = 0
+16963 mprotect(0x7ffff7dd3000, 4096, PROT_READ) = 0
+16963 mprotect(0x61d000, 4096, PROT_READ) = 0
+16963 mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+16963 munmap(0x7ffff7fee000, 35038)     = 0
+16963 set_tid_address(0x7ffff7fe9ad0)   = 16963
+16963 set_robust_list(0x7ffff7fe9ae0, 24) = 0
+16963 rt_sigaction(SIGRTMIN, {0x7ffff715fb50, [], SA_RESTORER|SA_SIGINFO, 0x7ffff716b390}, NULL, 8) = 0
+16963 rt_sigaction(SIGRT_1, {0x7ffff715fbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ffff716b390}, NULL, 8) = 0
+16963 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+16963 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+16963 statfs("/sys/fs/selinux", 0x7fffffffece0) = -1 ENOENT (No such file or directory)
+16963 statfs("/selinux", 0x7fffffffece0) = -1 ENOENT (No such file or directory)
+16963 brk(NULL)                         = 0x620000
+16963 brk(0x641000)                     = 0x641000
+16963 open("/proc/filesystems", O_RDONLY) = 3</proc/filesystems>
+16963 fstat(3</proc/filesystems>, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+16963 read(3</proc/filesystems>, "nodev\tsysfs\nnodev\trootfs\nnodev\tr"..., 1024) = 362
+16963 read(3</proc/filesystems>, "", 1024) = 0
+16963 close(3</proc/filesystems>)       = 0
+16963 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16963 ioctl(1</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+16963 open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+16963 fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+16963 getdents(3</home/user/test>, /* 12 entries */, 32768) = 400
+16963 getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+16963 close(3</home/user/test>)         = 0
+16963 fstat(1</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+16963 ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16963 write(1</dev/tty1>, "count_keystrokes    exploit.py\tg"..., 80) = 80
+16963 write(1</dev/tty1>, "count_keystrokes.c  getenvaddr\ti"..., 56) = 56
+16963 close(1</dev/tty1>)               = 0
+16963 close(2</dev/tty1>)               = 0
+16963 exit_group(0)                     = ?
+16963 +++ exited with 0 +++
+16956 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16963
+16956 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16963, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16956 rt_sigreturn({mask=[]})           = 16963
+16956 read(0<pipe:[96374]>,  <unfinished ...>
+16958 <... read resumed> "", 131072)    = 0
+16958 munmap(0x7ffff7fc9000, 139264)    = 0
+16958 close(0</dev/tty1>)               = 0
+16958 close(1<pipe:[96374]>)            = 0
+16958 close(2</dev/tty1>)               = 0
+16958 exit_group(0)                     = ?
+16958 +++ exited with 0 +++
+16955 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16958
+16955 rt_sigaction(SIGINT, {0x45fa10, [], SA_RESTORER, 0x7ffff76154b0}, {0x4449b0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16955 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16955 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16958, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16955 wait4(-1, 0x7fffffffdc50, WNOHANG, NULL) = -1 ECHILD (No child processes)
+16955 rt_sigreturn({mask=[]})           = 0
+16955 exit_group(0)                     = ?
+16956 <... read resumed> "", 8192)      = 0
+16955 +++ exited with 0 +++
+16956 exit_group(0)                     = ?
+16931 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 16955
+16956 +++ exited with 0 +++
+16931 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 16956
+16931 rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+16931 ioctl(255</dev/tty1>, TIOCSPGRP, [16931]) = 0
+16931 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+16931 ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16931 ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+16931 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+16931 close(3)                          = -1 EBADF (Bad file descriptor)
+16931 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16931 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16955, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+16931 wait4(-1, 0x7fffffffe0d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+16931 rt_sigreturn({mask=[]})           = 0
+16931 rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 stat("/var/mail/user", 0x7fffffffda90) = -1 ENOENT (No such file or directory)
+16931 rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+16931 ioctl(255</dev/tty1>, TIOCSPGRP, [16931]) = 0
+16931 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16931 rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+16931 ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+16931 ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16931 ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+16931 ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+16931 ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+16931 rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+16931 rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {0x45f790, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7ffff76154b0}, {0x4aceb0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16931 rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7ffff76154b0}, {0x45f2d0, [], SA_RESTORER, 0x7ffff76154b0}, 8) = 0
+16931 write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+16931 read(0</dev/tty1>, "\33", 1)      = 1
+16931 read(0</dev/tty1>, "\t", 1)       = 1
+16931 brk(0x895000)                     = 0x895000
+16931 brk(0x897000)                     = 0x897000
+16931 brk(0x898000)                     = 0x898000
+16931 brk(0x89a000)                     = 0x89a000
+16931 brk(0x89b000)                     = 0x89b000
+16931 brk(0x89d000)                     = 0x89d000
+16931 write(2</dev/tty1>, "\7", 1)      = 1
+16931 read(0</dev/tty1>,  <detached ...>
