@@ -1,5 +1,4 @@
 # ANDREW MAIER ADM5859 LOG ANALYSIS
-import http.client
 
 with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
     a_content = log_a.readlines()
@@ -46,6 +45,23 @@ with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
                 filename_list.append(filename)
         return filename_list
 
+    def count_filename_occurrences(all_files_accessed):
+        filenames = list()
+        filenames_count = list()
+        for file in all_files_accessed:
+            if file in filenames:
+                index = filenames.index(file)
+                value = filenames_count[index]
+                value += 1
+                filenames_count.pop(index)
+                filenames_count.insert(index, value)
+            else:
+                filenames.append(file)
+                filenames_count.append(1)
+
+        for x in range(len(filenames)):
+            print(filenames[x], ":", filenames_count[x])
+
     # Task 1
     A_read_events = count_read_events("A", a_content)
     B_read_events = count_read_events("B", b_content)
@@ -62,6 +78,8 @@ with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
     A_files_accessed = find_files_accessed("A", a_content)
     B_files_accessed = find_files_accessed("B", b_content)
 
+    # Bonus Task
+
     print(A_read_events, "read events in Log A")
     print(B_read_events, "read events in Log B")
 
@@ -71,10 +89,17 @@ with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
     print(A_file_read_events, "file read events in Log A")
     print(B_file_read_events, "file read events in Log B")
 
-    print("files accessed in log A:")
+    print("\nfiles accessed in log A:")
     for file in A_files_accessed:
         print(file)
 
-    print("files accessed in log B:")
+    print("\nfiles accessed in log B:")
     for file in B_files_accessed:
         print(file)
+
+    print("\nCounts of files accessed in log A")
+    count_filename_occurrences(A_files_accessed)
+    print("\nCounts of files accessed in log B")
+    count_filename_occurrences(B_files_accessed)
+
+
