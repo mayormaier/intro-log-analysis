@@ -60,7 +60,7 @@ with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
                 filenames_count.append(1)
 
         for x in range(len(filenames)):
-            print(filenames[x], ":", filenames_count[x])
+            print("Filename:", filenames[x], "Count:", filenames_count[x])
 
     # Task 1
     A_read_events = count_read_events("A", a_content)
@@ -77,8 +77,6 @@ with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
     # Task 4
     A_files_accessed = find_files_accessed("A", a_content)
     B_files_accessed = find_files_accessed("B", b_content)
-
-    # Bonus Task
 
     print(A_read_events, "read events in Log A")
     print(B_read_events, "read events in Log B")
@@ -97,6 +95,7 @@ with open("Log-A.strace", "r") as log_a, open("Log-B.strace", "r") as log_b:
     for file in B_files_accessed:
         print(file)
 
+    # Bonus Task
     print("\nCounts of files accessed in log A")
     count_filename_occurrences(A_files_accessed)
     print("\nCounts of files accessed in log B")
